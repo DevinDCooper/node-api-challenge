@@ -4,7 +4,7 @@
 
 In this challenge, you design and create a web API to manage the following resources: `Projects` and `Actions`.
 
-## Instructions
+## Instructions c
 
 **Read these instructions carefully**. Understand exactly what is expected **_before_** starting to code.
 
@@ -39,15 +39,19 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+   - Always make sure you import express like this const express = require('express'); and  at the top of your sever.js or your api wont run it
+   - That we could write our own middleware
 
 - [ ] Describe Middleware?
+    - middleware functions take req, res next objects and preform different task like executing code, making changes to the req and res  objects, end the req,res cycle and call the next middleware in the stack
 
 - [ ] Describe a Resource?
+    - A resource is one or more programs that are designed to carry out operations for a specific purpose.
 
-- [ ] What can the API return to help clients know if a request was successful?
+- [ ] What can the API return to help clients know if a request was successful? The api can return a status code like 200, 400, 404, 500 to let the user know if the api call was executed with 200 or if it didn't 400 or if the server is not working 500.
 
 - [ ] How can we partition our application into sub-applications?
-
+- By having routes to different api calls and not keeping everything in one file.
 ## Minimum Viable Product
 
 - [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
